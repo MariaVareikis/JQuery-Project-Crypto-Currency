@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <script src="jquery-3.4.1.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Crypto Currency</h1>
+    <br><br>
+
+    <div class="bar">
+        <input type="text" class="search" id="search" placeholder="Search Coins" />
+        <button id="btn">Search</button>
+        <button id="home" class="bar-buttons">Home</button>
+        <button id="about" class="bar-buttons">About</button>
+        <button id="live-reports" class="bar-buttons"> Live-reports</button>
+    </div>
+
+    <div class="load-gif"><img id="gif" src="image/loader.gif" width="80" height="80"></div>
+    
+    <div class="coins-container"></div>
+    
+    <div id="myModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" id="modalDialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">You can only select 5 coins</h5>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <p id="modalBody"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn modalBtn" id="keepCurrent" data-dismiss="modal">
+                        Cancel
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="scripts.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
+</body>
+
+</html>

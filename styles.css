@@ -1,0 +1,319 @@
+.search {
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none; 
+}
+
+#btn {
+    border-radius: 5px;
+    border: none;
+    background-color: lightblue;
+}
+
+#about {
+  border-radius: 5px;
+  background-color: lightblue;
+  border: none;
+  margin-right: 10px;
+}
+
+#home {
+  margin-left: 750px;
+  border-radius: 5px;
+  background-color: lightblue;
+  border: none;
+  margin-right: 10px;
+}
+
+#live-reports {
+  border-radius: 5px;
+  background-color: lightblue;
+  border: none;
+}
+
+.coins-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.coin-card{
+    display: inline-block;    
+    width: 150px;  
+    border-radius: 20px;
+    background-color: lightblue;
+    margin: 10px;
+    padding: 6px;     
+}
+
+.title{
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family : Georgia;
+    margin-top: -26px;
+}
+
+.coin-body{
+    color: rgb(87, 96, 100);
+    padding: 5px;
+    overflow: auto;
+    margin-top: -36px;
+}
+
+h1 {
+    font-family : Segoe Script;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -34px !important;
+    margin-top: -12px;
+}
+
+.coinImage {
+    height: 300px;
+    width: 1270px;
+    margin-top: 15px;
+}
+
+body {
+    background-image: url(image/back1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+
+.coin-card :hover {
+	color: #fff;
+}
+
+.more-info {
+    border: solid 1px black;
+    background-color: yellow;
+    font-family: Georgia;
+    border-radius: 10px;
+}
+
+.more-info-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coin-image {
+    width: 50px;
+    height: 50px; 
+    margin: -31px;
+    margin-bottom: -16px;  
+}
+
+.coin-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: none !important;
+    background-color: lightblue !important;
+}
+
+.more-info:focus {
+    outline: none;
+}
+
+button.more-info.collapsed:before {
+    content: "More Info";
+    display: block;
+}
+
+button.more-info:before {
+    content: "Show Less";
+    display: block;
+}
+
+.moreInfoContainer{
+    background-color: lightblue;
+    border: none;
+    border-radius: 0px;
+    margin-top: -17px;
+}
+
+label.switch {  
+    text-align: left;
+    width: 35px;
+    height: calc(40px / 2);
+    border-radius:40px;    
+    border: none;
+    background-color: #4ed164;;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  label.switch > span {
+    display: block;
+    width: 70%;
+    height: 70%;
+  }
+  
+  label.switch > input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+  } 
+  
+  label.switch > span:before, label.switch > span:after {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  label.switch > span {
+    border-radius: 60px;    
+    border: none;
+  }
+  
+  label.switch > span:before {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 40px;
+    transition: opacity .2s ease-out .1s, transform .2s ease-out .1s;
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  label.switch > span:after{
+    top: 50%;
+    z-index: 3;
+    transition: transform .4s cubic-bezier(0.44,-0.12, 0.07, 1.15);
+    width: calc(35px / 2);
+    height: calc(35px / 2);
+    transform: translate3d(0, -50%, 0);
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);  
+  }
+
+  label.switch > input[type="checkbox"]:checked ~ span:before {
+    transform: scale(0);
+    opacity: .7;
+  }
+  
+  label.switch > input[type="checkbox"]:checked ~ span:after {
+    transform: translate3d(100%, -50%, 0);
+  }
+
+  #myModal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #modalCard {
+      height: 90px;
+      width: 90px;
+      margin: 10px;
+      text-align: center;
+      border-radius: 20px;  
+  }
+
+  #modalDiv {
+      text-align: center;
+      display: inline-block;
+      border: none; 
+  }
+
+  #modalCoinName {
+      display: block;
+      margin-bottom: 15px;
+  }
+
+  .modalContent {
+    box-shadow: 0 30px 35px rgb(7 7 12 / 51%), 0 5px 15px rgb(0 0 0 / 50%);
+  }
+
+  #modalDialog {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .modal-content {
+        background-image: url(image/back-modal.jpg) !important;
+    }
+
+    .modal-body {
+        text-align: center;
+    }
+
+    .about-myself {
+      margin-top: -45px;
+      margin-bottom: 0px;
+      color:blue;
+      font-size: 50px;
+      text-align: center;
+      font-family: Ink Free;
+  }
+
+  h2{
+      color: yellow;
+      margin-bottom: 2px;
+      margin-top: -1px;
+      margin-left: 10px;
+  }
+
+  li{
+   color:whitesmoke;   
+   font-size: 25px;
+  }
+  
+  #aboutPage {
+      width: 1270px;
+      background-image: url("image/maria.JPG");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      color: white;
+      margin-top: 10px;
+      background-size: 100%; 
+  }
+  
+  .facebook{
+      width: 50px;
+      margin-right: 10px;
+      margin-top: 5px;
+  }
+
+  .instagram{
+      width: 50px;
+      height: 50px;
+      margin-top: 5px;
+  }
+
+  .son {
+   height:250px; width:250px;
+   margin-top: 10px;
+   border-radius: 10px;
+   margin-left: 5px;
+  }
+
+  .social {
+      margin-left: 1130px;
+  }
+
+  li {
+      margin-left:10px;
+      color: aqua;
+  }
+
+#gif{
+  margin-left: 47%;
+  margin-right: 50%;
+  margin-top: 150px;
+  position: fixed;
+}
